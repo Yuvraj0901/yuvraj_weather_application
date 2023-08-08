@@ -14,10 +14,6 @@ A weather application built with React as a frontend and Node as a Backend curre
 
 - Node.js and npm installed.
 
-### Installation
-
-1. Clone the repository:
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
