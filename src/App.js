@@ -11,7 +11,7 @@ function App(){
     setLocation(e.target.value);
   }
   const handleClick=async()=>{ try {
-    await  fetch(`http://localhost:5000/api/weather?address=${encodeURIComponent(Location)}`).then((response) => {
+    await  fetch(`https://backend-for-yuvrajs-weather.onrender.com/api/weather?address=${encodeURIComponent(Location)}`).then((response) => {
       response.json().then((data) => 
     {
     
@@ -44,7 +44,7 @@ const handleClickreset=()=>{
           <div className='section section_inputs'>
           <input  type='text'  value={Location} onChange={handlechange}placeholder='Enter Your Location'/>
           <button  onClick={handleClick}>Search</button>
-          <button className='rebtn' onClick={handleClickreset}>Reset</button>
+          <button  onClick={handleClickreset}>Reset</button>
           </div>
           <div className='section section_temperature'>
             <div className='icon'>
